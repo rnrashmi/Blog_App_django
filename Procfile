@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath djbloger MyBlog.wsgi --log-file-
+web: gunicorn --pythonpath djbloger MyBlog.deploy --log-file-
