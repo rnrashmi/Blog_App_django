@@ -6,7 +6,7 @@ Blog application with tagging and sharing feature built with django and postgres
 > - Bootstrap 4
 ---
 First Term 
-This is earlier version of the App
+This is an earlier version of the App
  
  - [x] Clone the Project
  - [x] Work on your own branch
