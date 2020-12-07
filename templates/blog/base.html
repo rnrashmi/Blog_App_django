@@ -10,15 +10,105 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="{%static 'css/blog.css'%}">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
     <title>{%block title_block%}{%endblock%}</title>
 </head>
 <body>
 <style>
 
+body,html,header{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color:#e3d512;
+    border-bottom: solid 1.5px #000;
+   
+}
+.item-0{
+margin-right: auto;
+}
+.item-5{
+    margin-right:350px ;
+}
+
+
+
+li{
+    padding: 7px;
+    list-style-type: none;
+    margin: 10px;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.contain{
+    height: 190px;
+    background-color: #e3d512;
+    margin-top: -10px;
+}
+.text-mounted{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    margin-left: 10em;
+}
+.bt-get__started{
+    border: solid 1.5px #000;
+    padding: 6px;
+    background-color: transparent;
+    border-radius:2px ;
+    margin-left: 17em;
+}
+.below{
+    width:500px;
+    margin-left: 17em;
+}
+
 </style>
-<nav>
-    <header>MyLogo</header>
-</nav>
+
+<header>
+    <nav>
+        <ul>
+            <li class="item-0"><a href="">Medium</a> </li>
+            <li class="item-1"><a href="">Story</a> </li>
+            <li class="item-2"><a href="">Explore</a></li>
+            <li class="item-3"><a href="">Write</a></li>
+            <li class="item-4"><a href="">Sign in</a></li>
+            <li class="item-5"><a href="">Get started</a></li>
+        </ul>
+    </nav>
+
+    <div class="contain">
+        <div class="text-mounted">Explore <p>Perspectives</p>
+        </p></div>
+        <p class="below">Read and share ideas from independent voices , world-class publications and experts from around the globe,Everyone's Welcome.
+            <a class="learn" href="#">Learn more</a></p>
+        <button class="bt-get__started">Get Started</button>
+    </div>
+    
+  
+</header>
+
+
 
     <div class="content">
     {%block content%}
