@@ -1,5 +1,6 @@
 # Blog_App_django
 Blog application with tagging and sharing feature built with django and postgresql
+![blogpage](sources/image.png)
 ## Technologies used
 > - Python 3.7
 > - Django 2.2
