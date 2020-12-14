@@ -13,4 +13,4 @@ This is an earlier version of the App
  - [x] Work on your own branch
  - [x] Submit a PR
  
- [Github profile](http://www.gihub.com/rashmirn)
+ [Github profile](https://github.com/rnrashmi/)
