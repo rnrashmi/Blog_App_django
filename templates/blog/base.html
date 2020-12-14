@@ -40,6 +40,9 @@ margin-right: auto;
 }
 .item-5{
     margin-right:350px ;
+    background-color: black;
+    color: white;
+    
 }
 
 
@@ -62,25 +65,40 @@ a:hover
 }
 
 .contain{
-    height: 190px;
+    height: 350px;
     background-color: #e3d512;
     margin-top: -10px;
+    border-bottom: solid 1px grey;
 }
 .text-mounted{
     font-family: 'PT Serif', serif;
-    font-size: x-large;
-    margin-left: 10em;
+    font-size: 50px;
+    margin-left:10%;
+    
 }
 .bt-get__started{
     border: solid 1.5px #000;
     padding: 6px;
     background-color: transparent;
     border-radius:2px ;
-    margin-left: 17em;
+    margin-left: 10%;
 }
 .below{
     width:500px;
-    margin-left: 17em;
+    margin-left: 10%;
+}
+.col{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-right: 1em;
+    padding-left: 1em;
+} 
+
+.section-2{
+    display: inline-block;
+
 }
 
 </style>
@@ -88,7 +106,7 @@ a:hover
 <header>
     <nav>
         <ul>
-            <li class="item-0"><a href="">Medium</a> </li>
+            <li class="item-0"><a href="{%url 'home'%}">Medium</a> </li>
             <li class="item-1"><a href="">Story</a> </li>
             <li class="item-2"><a href="">Explore</a></li>
             <li class="item-3"><a href="">Write</a></li>
@@ -97,29 +115,72 @@ a:hover
         </ul>
     </nav>
 
-    <div class="contain">
-        <div class="text-mounted">Explore <p>Perspectives</p>
-        </p></div>
-        <p class="below">Read and share ideas from independent voices , world-class publications and experts from around the globe,Everyone's Welcome.
-            <a class="learn" href="#">Learn more</a></p>
-        <button class="bt-get__started">Get Started</button>
-    </div>
+    
     
   
 </header>
 
 
-
-    <div class="content">
     {%block content%}
 
     {% endblock %}
-</div>
-<div class="side-bar">
+    <hr>
+
+<!-- <div class="side-bar">
     <p>Total no of post published today :{%my_tag%}</p>
     <h3>Latest posts:</h3>{%show_latest_posts %}
-</div>
+</div> -->
 
+
+<div class="envolope">
+    <div class="section-1 col">
+        <p>posts Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique recusandae odit placeat consequuntur, sint sit, aspernatur, praesentium molestias esse nobis consequatur enim autem. Suscipit corporis magni a sapiente? Illum, facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deserunt facilis corporis, vero a veritatis necessitatibus perferendis mollitia pariatur architecto. Nesciunt, porro. Voluptatum minima id, autem enim perferendis dolor ipsa ipsum provident necessitatibus, eum mollitia sit vero sunt porro non eligendi optio blanditiis ducimus. Dignissimos odio facere harum modi similique officiis itaque, dolore tempore quod omnis ea unde provident!</p>
+    </div>
+
+    <div class="section-2 col">
+        <p>DISCOVER MORE OF WHAT MATTERS TO YOU</p>
+        <div class="row">
+            <div class="col-md-6">
+                <button class='btn-1'>programming</button>
+            <button class='btn-2'>health</button>
+            <button class='btn-3'>diet</button>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class='btn-1'>Python</button>
+                <button class='btn-2'>data science</button>
+                <button class='btn-3'>javascipt</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class='btn-1'>relationship</button>
+                <button class='btn-2'>Machine learning</button>
+                <button class='btn-3'>politics</button>
+                </div>
+            </div>
+        
+    </div>
+    
+</div>
+<div class="envolope">
+    <div class="section-1 col">
+        <p>posts Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique recusandae odit placeat consequuntur, sint sit, aspernatur, praesentium molestias esse nobis consequatur enim autem. Suscipit corporis magni a sapiente? Illum, facere? Lorem 
+            <img src="" alt="">
+        </p>
+    </div>
+
+    <div class="section-2 col">
+       <a href="">Help</a>
+       <a href="">Status</a>
+       <a href="">Writers</a>
+       <a href="">Privacy</a>
+       <a href="">Terms</a>
+       <a href="">About</a>
+    </div>
+    
+</div>
 <script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
