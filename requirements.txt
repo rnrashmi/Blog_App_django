@@ -3,3 +3,4 @@ django-taggit==1.2.0
 gunicorn==20.0.4
 pytz==2020.4
 sqlparse==0.4.1
+whitenoise == 3.2.1

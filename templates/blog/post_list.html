@@ -17,6 +17,7 @@
   <h6>Trending on Medium</h6>
   <div class="row posts">
     <div class="col-md-6">
+      <div class="wrapper">
       {%if tag %}
       <h4>Post tagged with {{tag.name}}</h4>
       {%endif%}
@@ -33,7 +34,9 @@
          
 {{post.body|truncatewords:10|linebreaks}}
 <br>
+
 {%endfor%}
+</div>
 
 
 {% include 'blog/pagination.html' with page=post_list %}
